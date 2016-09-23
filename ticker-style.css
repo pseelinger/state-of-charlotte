@@ -1,0 +1,25 @@
+#breaking-news{
+  float: left;
+  display: inline;
+  padding-top: 39px;
+  padding-left: 40px;
+}
+#scroller{
+  float: left;
+  overflow-y: hidden;
+  display: inline;
+  max-height: 120px;
+}
+#up, #down{
+  background-color: rgb(0,113,150);
+  display: inline-block;
+  color: white !important;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  padding: 5px;
+  border: 0;
+}
+#buttons{
+  padding-left: 15px;
+  padding-top: 40px;
+}

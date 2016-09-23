@@ -1,11 +1,13 @@
 <head>
   <title>Twitter</title>
+    <link rel="stylesheet" type="text/css" href="http://stateofcharlotte.org/css/bootstrap-theme.css" />
   <link rel="stylesheet" type="text/css" href="twitter-style.css">
 </head>
   <body>
+         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script>
     function pageComplete(){
-        $('.twitter-tweet').tweetLinkify();
+        $('.tweet-div').tweetLinkify();
     }
 </script>
 <script src="tweetLinkIt/tweetLinkIt.js"></script>
@@ -30,10 +32,10 @@ $string = json_decode($twitter->setGetfield($getfield)
 if($string["errors"][0]["message"] != "") {echo "<h3>Sorry, there was a problem.</h3><p>Twitter returned the following error message:</p><p><em>".$string[errors][0]["message"]."</em></p>";exit();}
 foreach($string as $items)
     {
-        echo "<div class='tweet-div'>".$items['created_at']."<br />";
-        echo $items['text']."<br />"."</div>";
+        echo "<div class='tweet-div'><p>".$items['created_at']."<br />";
+        echo $items['text']."<br />"."</p></div>";
 
     }
+    echo "<script>pageComplete()</script>";
  ?>
-     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
  </body>
