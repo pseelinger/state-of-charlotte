@@ -1,4 +1,12 @@
 .tweet-div{
   float: left;
-  display: inline;
+  clear: both;
+  height: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 35px;
+}
+body{
+  background: #333333;
+  color: white;
 }

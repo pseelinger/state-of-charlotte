@@ -1,8 +1,14 @@
-<!-- <head>
+<head>
   <title>Twitter</title>
   <link rel="stylesheet" type="text/css" href="twitter-style.css">
 </head>
-  <body> -->
+  <body>
+    <script>
+    function pageComplete(){
+        $('.twitter-tweet').tweetLinkify();
+    }
+</script>
+<script src="tweetLinkIt/tweetLinkIt.js"></script>
 <?php
 require_once('TwitterAPIExchange.php');
 /** Set access tokens here - see: https://dev.twitter.com/apps/ **/
@@ -29,4 +35,5 @@ foreach($string as $items)
 
     }
  ?>
- <!-- </body> -->
+     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+ </body>
